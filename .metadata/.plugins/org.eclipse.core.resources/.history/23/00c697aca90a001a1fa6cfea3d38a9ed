@@ -1,0 +1,40 @@
+package com.ibm.training.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class EmployeeProgress {
+	
+	@Id
+	int employee_id;
+	
+	String employee_name;
+	int project_part_progress;
+	public int getEmployee_id() {
+		return employee_id;
+	}
+	public void setEmployee_id(int employee_id) {
+		this.employee_id = employee_id;
+	}
+	public String getEmployee_name() {
+		return employee_name;
+	}
+	public void setEmployee_name(String employee_name) {
+		this.employee_name = employee_name;
+	}
+	public int getProject_part_progress() {
+		return project_part_progress;
+	}
+	public void setProject_part_progress(int project_part_progress) {
+		this.project_part_progress = project_part_progress;
+	}
+	public EmployeeProgress(int employee_id, String employee_name, int project_part_progress) {
+		this.employee_id = employee_id;
+		this.employee_name = employee_name;
+		this.project_part_progress = project_part_progress;
+	}
+	
+	
+
+}

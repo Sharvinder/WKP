@@ -1,0 +1,12 @@
+package com.ibm.training.repository;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.ibm.training.model.EmployeeProgress;
+
+
+@Repository
+public interface MonthlyChartRepository extends CrudRepository<EmployeeProgress, String>{
+
+}
