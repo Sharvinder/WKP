@@ -25,16 +25,16 @@ public class WeeklyChartController {
 		return service.getAllEmployees();
 	}
 	
-	@RequestMapping("/employees/lastmonth/{month}")
-	Iterable<EmployeeGrowth> getAllEmployeesForLastMonth(@PathVariable Integer month)
+	@RequestMapping("/employees/lastmonth/{month}/{year}/{project_name}")
+	Iterable<EmployeeGrowth> getAllEmployeesForLastMonth(@PathVariable Integer month, @PathVariable Integer year, @PathVariable String project_name)
 	{
-		return service.getAllEmployeesForLastMonth(month);
+		return service.getAllEmployeesForLastMonth(month, year, project_name);
 	}
 	
-	@RequestMapping("/employees/{month}")
-	Iterable<EmployeeGrowth> getAllEmployeesByMonth(@PathVariable Integer month)
+	@RequestMapping("/employees/{month}/{year}/{project_name}")
+	Iterable<EmployeeGrowth> getAllEmployeesByMonth(@PathVariable Integer month, @PathVariable Integer year, @PathVariable String project_name)
 	{
-		return service.getAllEmployeesByMonth(month);
+		return service.getAllEmployeesByMonth(month, year, project_name);
 	}
 
 }

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;RestConfig.java&apos; to &apos;ChartChartingService/src/main/java/com.ibm.training&apos;&#x0D;&#x0A;- Original project: &apos;CalendarRestAPI&apos;&#x0D;&#x0A;- Destination element: &apos;ChartChartingService/src/main/java/com.ibm.training&apos;&#x0D;&#x0A;- Original element: &apos;com.ibm.training.RestConfig.java&apos;" description="Copy compilation unit" destination="=ChartChartingService/src\/main\/java&lt;com.ibm.training" element1="/src\/main\/java&lt;com.ibm.training{RestConfig.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1574231406051" units="1" version="1.0"/>
-</session>

@@ -17,12 +17,12 @@ public class WeeklyChartService {
 		return repo.findAll();
 	}
 
-	public Iterable<EmployeeGrowth> getAllEmployeesForLastMonth(Integer month) {
-		return repo.findByMonth(month);
+	public Iterable<EmployeeGrowth> getAllEmployeesForLastMonth(Integer month, Integer year, String project_name) {
+		return repo.findByMonth(month, year, project_name);
 	}
 
-	public Iterable<EmployeeGrowth> getAllEmployeesByMonth(Integer month) {
-		return repo.findAllMonthsBeforeCurrent(month);
-	}
+	public Iterable<EmployeeGrowth> getAllEmployeesByMonth(Integer month,  Integer year, String project_name) {
+		return repo.findAllMonthsBeforeCurrent(month, year, project_name);
+	}	
 
 }
